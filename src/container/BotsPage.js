@@ -3,7 +3,7 @@ import YourBotArmy from './YourBotArmy';
 import BotCollection from './BotCollection';
 
 class BotsPage extends Component {
-  //start here with your code for step one
+  
   
   state= {
     bots: [],
@@ -15,7 +15,7 @@ class BotsPage extends Component {
   }
 
   getBots() {
-    fetch('http://localhost:6001/bots')
+    fetch('http://localhost:3000/bots')
       .then(res => res.json())
       .then(bots => {
         console.log(bots);
